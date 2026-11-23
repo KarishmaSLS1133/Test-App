@@ -1,0 +1,31 @@
+<mvc:View controllerName="employee.controller.View1" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    	<VBox>
+			<f:SimpleForm editable="true" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="4" labelSpanM="4" labelSpanS="12"
+				adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0" columnsXL="3" columnsL="2" columnsM="2"
+				singleContainerFullSize="false">
+				<f:content>
+					<core:Title text="{i18n>Requestor}"/>
+					<Label text="{i18n>EnterTheLANIDofTheContact}" design="Bold" required="true"/>
+					<Input value="{globalModel>/requestor/LANID}" editable="false"/>
+					<Label text="{i18n>Name}" design="Bold"/>
+					<Input value="{globalModel>/requestor/name}" editable="false"/>
+					<Label text="{i18n>pernr}" design="Bold"/>
+					<Input value="{globalModel>/requestor/pernr}" editable="false"/>
+					<Label text="{i18n>EmailAddress}" design="Bold"/>
+					<Input value="{globalModel>/requestor/email}" editable="false"/>
+					<core:Title text=""/>
+					<Label text="{i18n>Phone}" design="Bold" required="true"/>
+					<Input value="{globalModel>/requestor/phone}" liveChange="onPhoneChange" valueState="{globalModel>/CoworkerPhoneValueState}"/>
+					<Label text="{i18n>LOB}" design="Bold"/>
+					<Input value="{globalModel>/requestor/LOB}" editable="false"/>
+					<Label text="{i18n>SubArea}" design="Bold"/>
+					<Input value="{globalModel>/requestor/subArea}" editable="false"/>
+					<Label text="{i18n>personnelSubArea}" design="Bold"/>
+					<Input value="{globalModel>/requestor/personalSubArea}" editable="false"/>
+				</f:content>
+			</f:SimpleForm>
+		</VBox>
+    </Page>
+</mvc:View>
