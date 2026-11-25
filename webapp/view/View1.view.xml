@@ -16,6 +16,7 @@
 					<Label text="{i18n>EmailAddress}" design="Bold"/>
 					<Input value="{globalModel>/requestor/email}" editable="false"/>
 					<core:Title text=" "/>
+					
 					<Label text="{i18n>Phone}" design="Bold" required="true"/>
 					<Input value="{globalModel>/requestor/phone}" liveChange="onPhoneChange" valueState="{globalModel>/CoworkerPhoneValueState}"/>
 					<Label text="{i18n>LOB}" design="Bold"/>
